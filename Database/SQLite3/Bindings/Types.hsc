@@ -243,8 +243,9 @@ instance Bounded CArgCount where
     maxBound = CArgCount #{const SQLITE_LIMIT_FUNCTION_ARG}
 
 -- | Tells SQLite3 that the defined custom SQL function is deterministic.
+-- NOTE: this flag has been removed by version 3.8
 c_SQLITE_DETERMINISTIC :: CInt
-c_SQLITE_DETERMINISTIC = #{const SQLITE_DETERMINISTIC}
+c_SQLITE_DETERMINISTIC = #{const 0}
 
 -- | <https://www.sqlite.org/c3ref/c_abort.html>
 newtype CError = CError CInt
