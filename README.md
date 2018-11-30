@@ -1,7 +1,15 @@
 Low-level SQLite3 bindings for Haskell
 ======================================
 
-[![Build Status](https://travis-ci.org/IreneKnapp/direct-sqlite.png?branch=master)](https://travis-ci.org/IreneKnapp/direct-sqlite)
+### Motivation
+
+Comparing to the original repo, this one provides bumped version of `sqlite` library which is
+capable of multithreading (WAL support).
+
+It is currently used in:
+* Disciplina project
+
+### Description
 
 See [direct-sqlite on Hackage](https://hackage.haskell.org/package/direct-sqlite).
 
